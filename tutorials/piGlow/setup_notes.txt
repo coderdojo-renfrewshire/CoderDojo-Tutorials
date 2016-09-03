@@ -1,0 +1,25 @@
+Raspberry Pi / PiGlow setup notes
+
+Note: if the display is massively "zoomed in", do the following:
+Go to, Menu / Preferences / Raspberry Pi Configuration / set Overscan to DISABLED and reboot
+
+
+PiGlow files can be found: https://github.com/pimoroni/piglow
+Install python modules as per the instructions on the github page, i.e.
+curl -sS get.pimoroni.com/piglow | bash
+
+(will take ~5 mins, plus time to reboot)
+
+#########
+
+Kids can also control the LEDs from a web interface, with easy sliders to play with etc.
+
+Download https://github.com/cyberscribe/piglowweb and store in e.g. Documents/pigloweb
+
+in shell,
+cd Documents/pigloweb
+sudo python server.py
+
+then open browser to 127.0.0.1
+
+(ctrl-c in shell to shutdown server)
